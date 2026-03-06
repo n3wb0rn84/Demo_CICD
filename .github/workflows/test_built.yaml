@@ -26,7 +26,7 @@ jobs:
       
       - name: Mailage en cas de foirage du test
         if: failure()
-        uses: ksatriow/action-mailer@v1.0.0
+        uses: JaSiLez/smtp-notifier@main
         with:
           server_address: ${{ vars.SMTP_SERVER }}
           server_port: ${{ vars.SMTP_PORT }}
