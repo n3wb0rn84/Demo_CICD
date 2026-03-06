@@ -24,5 +24,8 @@ jobs:
       - name: Lancement des tests unitaires 
         run: npm run test
 
+      - name: Build de l'app
+        run: npm run build
+
       - name: Vérifier le résultat du build ( Projet "Hello world")
         run: npm run start
