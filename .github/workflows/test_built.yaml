@@ -20,6 +20,9 @@ jobs:
 
       - name: Clean install de dépendance (node_module , npm)
         run: npm ci
-        
+
       - name: Lancement des tests unitaires 
         run: npm run test
+
+      - name: Vérifier le résultat du build ( Projet "Hello world")
+        run: npm run start
