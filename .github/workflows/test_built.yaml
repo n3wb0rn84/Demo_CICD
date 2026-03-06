@@ -1,0 +1,11 @@
+name: Test and Build
+
+on: [workflow_dispatch]
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Vérification des fichiers présents dans le runner
+        run: ls -a -l
+
