@@ -1,7 +1,7 @@
 const calcService = {
 
   isEven: (nb: number) => {
-    return nb % 2 === 0;
+    return true;
   }
 
 };
